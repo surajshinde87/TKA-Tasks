@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Data Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2em;
+    }
+    form {
+      max-width: 400px;
+    }
+    label {
+      display: block;
+      margin-top: 1em;
+    }
+    input[type="submit"] {
+      margin-top: 2em;
+    }
+  </style>
+</head>
+<body>
+  <h2>Student Information Form</h2>
+  <form action="submit-student" method="post">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="1" max="120" required>
+
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city" required>
+
+    <label for="mobile">Mobile Number:</label>
+    <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+    <small>Format: 10 digits (e.g., 9876543210)</small>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
