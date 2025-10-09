@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+     <!-- With Property -->
+     <!-- 
+ <bean class="com.entity.Car" >
+ <property name="car_id" value="104"></property>
+ <property name="name" value="fortuner"></property>
+ <property name="color" value="white"></property>
+ <property name="speed" value="130KM/H"></property>
+ </bean>
+  -->
+    <!-- With cons args -->
+   <bean id="car" class="com.entity.Car" >
+   <constructor-arg index="0" value="105" ></constructor-arg>
+   <constructor-arg index="1" value="scorpio" ></constructor-arg>
+   <constructor-arg index="2" value="black" ></constructor-arg>
+   <constructor-arg index="3" value="140KM/H" ></constructor-arg>
+   </bean>
+   
+
+</beans>
