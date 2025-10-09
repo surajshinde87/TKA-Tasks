@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+
+<bean class="com.entities.Employee">
+<property name="emp_id" value="101"></property>
+<property name="name" value="suraj"></property>
+<property name="salary" value="12LPA"></property>
+<property name="age" value="22"></property>
+<property name="department" value="developer"></property> 
+<property name="project" ref="p" ></property> 
+</bean>
+
+<bean id="p" class="com.entities.Project">
+<constructor-arg index="0" value="201" ></constructor-arg>
+<constructor-arg index="1" value="ecommerce" ></constructor-arg>
+<constructor-arg index="2" value="MERN" ></constructor-arg>
+</bean>
+
+</beans>
